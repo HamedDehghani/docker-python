@@ -6,7 +6,7 @@ WORKDIR /app
 RUN apt-get update
 RUN apt-get install -y gcc
 RUN apt-get install -y git
-#RUN git clone 'https://hameddehghani:@github.com/docker-python.git'
+RUN git clone 'https://github.com/HamedDehghani/docker-python.git'
 
 WORKDIR /app/docker-python/
 ENV PYTHONPATH /app/docker-python/

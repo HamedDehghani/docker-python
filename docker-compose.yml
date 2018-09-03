@@ -1,5 +1,5 @@
 ---
 version: '3'
 services:
-  crawler:
-          image: crawler:latest
+  python:
+    image: docker-python:latest
