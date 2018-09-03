@@ -3,5 +3,6 @@ version: '3'
 services:
   docker-python-test:
     image: test:v1.2
-  volumes:
-     - ${PWD}/output/:/app/docker-python/output
+    volumes:
+      - /home/hdehghani/PycharmProjects/Test/docker-python/output/:/app/docker-python/output/
+    command: tail -F /dev/null

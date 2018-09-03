@@ -6,6 +6,8 @@ WORKDIR /app
 RUN apt-get update
 RUN apt-get install -y gcc
 RUN apt-get install -y git
+#/var/spool/cron/crontabs/
+RUN crontab -l | { cat; echo "*/1 * * * * root /usr/bin/python /app/main.py"; } | crontab -
 RUN git clone 'https://github.com/HamedDehghani/docker-python.git'
 
 WORKDIR /app/docker-python/
