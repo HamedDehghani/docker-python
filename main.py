@@ -11,6 +11,7 @@ def write_to_file(data):
 
 def main():
     write_to_file(str(datetime.datetime.now()))
+    print(str(datetime.datetime.now()))
 
 
 if __name__ == '__main__':
