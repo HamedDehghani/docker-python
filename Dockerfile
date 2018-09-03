@@ -11,4 +11,4 @@ RUN git clone 'https://github.com/HamedDehghani/docker-python.git'
 WORKDIR /app/docker-python/
 ENV PYTHONPATH /app/docker-python/
 
-ENTRYPOINT git fetch --all && git reset --hard origin/master && git pull && chmod +x ./bin/runProject.sh && pip install -r requirements.txt && ./bin/runProject.sh
+ENTRYPOINT git fetch --all && git reset --hard origin/master && git pull && chmod +x ./bin/runProject.sh && pip install -r requirements.txt && ./runProject.sh
