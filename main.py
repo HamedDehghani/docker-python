@@ -2,7 +2,7 @@ import datetime
 
 
 def write_to_file(data):
-    with open('/tmp/out.log', 'a') as f:
+    with open('output/out.log', 'a') as f:
         try:
             f.writelines(data + '\n')
         except Exception as ex:
