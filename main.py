@@ -2,7 +2,7 @@ import datetime
 
 
 def write_to_file(data):
-    with open('output/out.log', 'a') as f:
+    with open('/app/docker-python/output/out.log', 'a') as f:
         try:
             f.writelines(data + '\n')
         except Exception as ex:
@@ -11,7 +11,6 @@ def write_to_file(data):
 
 def main():
     write_to_file(str(datetime.datetime.now()))
-    print(str(datetime.datetime.now()))
 
 
 if __name__ == '__main__':

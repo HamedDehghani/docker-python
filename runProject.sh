@@ -5,7 +5,9 @@ echo 'running main.py ...'
 
 #/var/spool/cron/crontabs/
 crontab -l | { cat; echo "*/1 * * * * /usr/bin/python /app/docker-python/main.py"; } | crontab -
-#crontab -l
+#service cron start
+/etc/init.d/cron start
+
 pip install --upgrade setuptools
 python main.py
 tail -F /dev/null
