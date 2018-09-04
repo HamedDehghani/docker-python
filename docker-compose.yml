@@ -2,10 +2,10 @@
 version: '3'
 services:
   docker-python-test:
-    image: test:v1.3
+    image: test:v1.4
     volumes:
       - /home/hdehghani/PycharmProjects/Test/docker-python/output/:/app/docker-python/output/
-#    command: tail -F /dev/null
-    read_only: false
-    privileged: true
-    tty: true
+    # command: tail -F /dev/null
+    # read_only: false
+    # privileged: true
+    # tty: true
