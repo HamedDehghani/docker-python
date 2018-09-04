@@ -2,6 +2,7 @@
 version: '3'
 services:
   docker-python-test:
+    container_name: docker-python-test
     image: test:v1.4
     volumes:
       - /home/hdehghani/PycharmProjects/Test/docker-python/output/:/app/docker-python/output/
